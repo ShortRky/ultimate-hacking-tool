@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Linux</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="terminal-container">
-        <div class="terminal-header">
-            <div class="header-buttons">
-                <div class="btn close"></div>
-                <div class="btn minimize"></div>
-                <div class="btn maximize"></div>
-            </div>
-        </div>
-        <div class="terminal-content" id="output"></div>
-        <div class="input-line">
-            <span class="prompt">user@web-linux:~$ </span>
-            <div class="input" id="input" contenteditable="true"></div>
-        </div>
+    <div id="terminal">
+        <div id="output"></div>
+        <div class="prompt">$</div>
+        <div id="input" contenteditable="true"></div>
     </div>
     <script src="script.js"></script>
 </body>
