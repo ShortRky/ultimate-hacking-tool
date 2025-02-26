@@ -1,15 +1,23 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Web OS Terminal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Linux</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="terminal">
-        <div class="output" id="output"></div>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="header-buttons">
+                <div class="btn close"></div>
+                <div class="btn minimize"></div>
+                <div class="btn maximize"></div>
+            </div>
+        </div>
+        <div class="terminal-content" id="output"></div>
         <div class="input-line">
-            <span class="prompt">webos@user:~$</span>
+            <span class="prompt">user@web-linux:~$ </span>
             <div class="input" id="input" contenteditable="true"></div>
         </div>
     </div>
